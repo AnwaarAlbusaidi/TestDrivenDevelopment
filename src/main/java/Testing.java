@@ -9,9 +9,15 @@ public class Testing {
 		evenOddresult = evenOrOddNumber(arr);
 		for (String current : evenOddresult.keySet())
 			System.out.println(current + evenOddresult.get(current));
+<<<<<<< HEAD
 	
 		System.out.println("Revers of this string (this is a sentence) : " +reverse("this is a sentence"));
+=======
+
+		System.out.println(reverse("this is a sentence"));
+>>>>>>> cbe14282db604084e17ca281919f97eac5143c63
 	}
+
 	/**
 	 * This method will take an array of numbers and search for even or odd numbers
 	 * the power number
@@ -34,7 +40,7 @@ public class Testing {
 
 		return evenOddNumber;
 	}
-	
+
 	/**
 	 * This method will take two numbers and calculate the power number
 	 * 
@@ -50,20 +56,20 @@ public class Testing {
 
 		return p;
 	}
+
 	/**
 	 * This method will take a string and return the reverse string
 	 * 
-	 * @param word 
+	 * @param word
 	 * @return the reverse of the string
 	 */
-	public static String reverse(String word)
-	{
+	public static String reverse(String word) {
 		char ch[] = word.toCharArray();
-		String revWord= "";
-		for(int index = word.length()-1; index >=0 ; index--) 
-			revWord = revWord+ch[index];
-		
+		String revWord = "";
+		for (int index = word.length() - 1; index >= 0; index--)
+			revWord = revWord + ch[index];
+
 		return revWord;
 	}
-	
+
 }

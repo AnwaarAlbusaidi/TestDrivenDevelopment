@@ -25,8 +25,6 @@ class validateBracketsTest {
 	@DisplayName("Can throw an exception.")
 	void testOpenCloseValidate2() {
 		validateBrackets test = new validateBrackets();
-		
-		});
 	}
 	
 	

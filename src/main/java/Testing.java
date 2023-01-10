@@ -7,11 +7,10 @@ public class Testing {
 		int[] arr = new int[] { 2, 3, 7, 6, 9, 4, 5, 7 };
 		HashMap<String, ArrayList<Integer>> evenOddresult = new HashMap<String, ArrayList<Integer>>();
 		evenOddresult = evenOrOddNumber(arr);
-		System.out.println("Even or Odd number method");
 		for (String current : evenOddresult.keySet())
 			System.out.println(current + evenOddresult.get(current));
-		
-		System.out.println(reverse("this is a sentence"));
+	
+		System.out.println("Revers of this string (this is a sentence) : " +reverse("this is a sentence"));
 	}
 	/**
 	 * This method will take an array of numbers and search for even or odd numbers

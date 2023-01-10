@@ -8,7 +8,13 @@ public class split {
 			System.out.println(result.get(i));
 		
 	}
-	// This is a re-implementation of split method
+	
+	/**
+	 * This is a re-implementation of split method
+	 * @param str for word string
+	 * @param ch for delimiter
+	 * @return array list
+	 */
 	public static ArrayList<String> spilt(String str, Character ch) {
 
 		ArrayList<String> spiltArrayList = new ArrayList<String>();

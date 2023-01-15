@@ -80,13 +80,7 @@ class TestingCase {
 	void testEvenOrOddNumber5() {
 		Testing test1 = new Testing();
 		int[] arr4 = null;
-<<<<<<< HEAD
 		assertThrows(NullPointerException.class, () -> {test1.evenOrOddNumber(arr4);});
-=======
-		assertThrows(NullPointerException.class, () -> {
-			test1.evenOrOddNumber(arr4);
-		});
->>>>>>> cbe14282db604084e17ca281919f97eac5143c63
 	}
 
 	@Test
@@ -100,9 +94,9 @@ class TestingCase {
 	@DisplayName("base: null, exponent: null")
 	void testPowerMethod2() {
 		Testing test = new Testing();
-		assertThrows(NullPointerException.class, () -> {
-			test.powerMethod(null, null);
-		});
+		assertThrows(NullPointerException.class, 
+				     () -> test.powerMethod(null, null)
+		);
 	}
 
 	@Test

@@ -18,7 +18,6 @@ public class split {
 	public static ArrayList<String> spilt(String str, Character ch) {
 
 		ArrayList<String> spiltArrayList = new ArrayList<String>();
-
 		String word = "";
 		if(str != null && ch != null) 
 		{
@@ -30,6 +29,9 @@ public class split {
 			}
 		   }
 		}
+		else 
+		spiltArrayList.add("");
+		
 		return spiltArrayList;
 	}
 }

@@ -12,7 +12,8 @@ class splitTest {
 	void testSpilt() {
 		split test = new split();
 		ArrayList<String> spiltArrayList = new ArrayList<String>();
-		assertArrayEquals(spiltArrayList.toArray(), test.spilt(null,null).toArray());
+		spiltArrayList.add("");
+		assertEquals(spiltArrayList, test.spilt(null,null));
 	}
 	@Test
 	@DisplayName("Take an empty string as the first argument.")
@@ -35,6 +36,7 @@ class splitTest {
 	void testSpilt3() {
 		split test = new split();
 		ArrayList<String> spiltArrayList = new ArrayList<String>();
+		spiltArrayList.add("");
 		assertEquals(spiltArrayList, test.spilt("",null));
 
 	}

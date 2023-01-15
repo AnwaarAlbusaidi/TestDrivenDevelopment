@@ -9,13 +9,7 @@ public class Testing {
 		evenOddresult = evenOrOddNumber(arr);
 		for (String current : evenOddresult.keySet())
 			System.out.println(current + evenOddresult.get(current));
-<<<<<<< HEAD
-	
 		System.out.println("Revers of this string (this is a sentence) : " +reverse("this is a sentence"));
-=======
-
-		System.out.println(reverse("this is a sentence"));
->>>>>>> cbe14282db604084e17ca281919f97eac5143c63
 	}
 
 	/**
